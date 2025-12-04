@@ -21,6 +21,12 @@ jobs:
       - name: Install libpng-dev
         run: sudo apt-get update && sudo apt-get install -y libpng-dev libcurl4-openssl-dev    
 
+      - name: Set up Quarto and TinyTeX
+        # TinyTeX is necessary for rendering Quarto documents to PDF
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          tinytex: true
+          
       - name: Install R
         uses: r-lib/actions/setup-r@v2
         with:
@@ -31,12 +37,6 @@ jobs:
           install.packages(c("png", "rmarkdown", "knitr", "pander", "gcite", "tikzDevice"))
         shell: Rscript {0}          
 
-      - name: Set up Quarto and TinyTeX
-        # TinyTeX is necessary for rendering Quarto documents to PDF
-        uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          tinytex: true
-          
       - name: Render Quarto Document to PDF
         # Replace 'vitae.qmd' with the actual name of your main Quarto file
         run: quarto render vitae.qmd 
