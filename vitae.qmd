@@ -2,6 +2,7 @@
 title: "Debugging"
 format: pdf
 date: now
+latex-finytex: true
 ---
 
 ## Quarto
@@ -15,5 +16,12 @@ When you click the **Render** button a document will be generated that includes 
 # Get and print the installation path
 tinytex_path <- tinytex::tinytex_root()
 cat("TinyTeX Installation Path:", tinytex_path, "\n")
+```
+
+```{r}
+#| dev: tikz
+#| echo: false
+x <- rnorm(100)
+hist(x)
 ```
 
