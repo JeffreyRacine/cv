@@ -2,7 +2,7 @@
 title: "Debugging"
 format: pdf
 date: now
-latex-finytex: true
+latex-tinytex: true
 ---
 
 ## Quarto
