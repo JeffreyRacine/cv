@@ -88,7 +88,7 @@ jobs:
           
           # Add the generated PDF file. The path must match where Quarto outputs the file.
           # For a single document, it usually appears in the same directory.
-          git add vitae.pdf
+          git add vitae.pdf vitae.html vitae_files
           
           # Commit the changes. '|| true' or '|| echo' prevents the action from failing 
           # if there are no changes to the PDF (e.g., if the data didn't update).
