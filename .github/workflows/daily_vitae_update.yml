@@ -7,7 +7,7 @@ on:
       - main
   # 2. Schedule a daily run (every night, 0:00 UTC)
   schedule:
-    - cron: '0 0 * * -'
+    - cron: '0 0 * * *'
   # 3. Allow manual triggering from the Actions tab
   workflow_dispatch:
 
