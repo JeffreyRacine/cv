@@ -347,8 +347,9 @@ header-gseval: true
     Member of Charting Committee (2011-2015)\
     Charting Committee, 2012 Annual Meetings (June 15-19, 2012, Chalkidiki, Greece)\
     Charting Committee, 2014 Annual Meetings (June 12-16, 2014, Cádiz, España)\
-    Scientific Committee, 2024 Annual Meetings (June 25-29, 2024, Braga, Portugal)
-
+    Scientific Committee, 2024 Annual Meetings (June 25-29, 2024, Braga, Portugal)\
+    Scientific Committee, 2026 Annual Meetings (June 22-26, 2026, Thessaloniki, Greece)
+    
 -   *Info-Metrics Institute*
 
     Memorial Prize Committee in Memory of Halbert L. White, Jr., (2016-)\
