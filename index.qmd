@@ -3,8 +3,9 @@ title: "Curriculum Vitae"
 author: "Jeffrey Scott Racine"
 date: now
 date-format: "YYYY-MM-DD HH:mm"
-format: 
-  html: default
+format:
+  html:
+    toc: true
   pdf:
     documentclass: article
     keep-tex: true
