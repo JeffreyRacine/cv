@@ -101,19 +101,19 @@ jobs:
           # Push the commit back to the main branch
           git push
           
-deploy-pages:
-    # 1. This job must only run after the build job succeeds
-    needs: build-pdf 
-    
-    # 2. Configure the GitHub Pages environment
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  deploy-pages:
+      # 1. This job must only run after the build job succeeds
+      needs: build-pdf 
       
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        # 3. Use the official deployment action
-        uses: actions/deploy-pages@v4
+      # 2. Configure the GitHub Pages environment
+      environment:
+        name: github-pages
+        url: ${{ steps.deployment.outputs.page_url }}
+        
+      runs-on: ubuntu-latest
+      
+      steps:
+        - name: Deploy to GitHub Pages
+          id: deployment
+          # 3. Use the official deployment action
+          uses: actions/deploy-pages@v4
