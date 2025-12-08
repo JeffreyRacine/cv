@@ -101,6 +101,13 @@ jobs:
           # Push the commit back to the main branch
           git push
           
+          # In your 'build' job, after the site files are generated
+          - name: Upload artifact
+            uses: actions/upload-pages-artifact@v3
+            with:
+              # Set path to '.' to upload the entire repository root
+              path: '.'          
+          
   deploy-pages:
       # 1. Set permissions to allow the action to write/commit files
       permissions:
