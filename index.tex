@@ -155,6 +155,10 @@
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
+% fallback for those not using the hyperref driver hyperxmp:
+\makeatletter
+\@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
+\makeatother
 \hypersetup{
   pdftitle={Curriculum Vitae},
   pdfauthor={Jeffrey Scott Racine},
@@ -168,7 +172,7 @@
 
 \title{Curriculum Vitae}
 \author{Jeffrey Scott Racine}
-\date{2026-07-24 02:46}
+\date{2026-07-25 02:45}
 \begin{document}
 \maketitle
 
